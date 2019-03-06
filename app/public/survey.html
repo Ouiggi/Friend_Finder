@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <title>Flat Earth Friend Finder</title>
+
+    <div class="container">
+      <br />
+
+      <h2>Questionaire</h2>
+      <hr />
+
+      <h3><strong>And you are???</strong></h3>
+      <h4>Name</h4>
+      <input type="text" id="name" class="form-control" required />
+
+      <hr />
+
+      <h3 class="mt-md-5"><strong>Question 1</strong></h3>
+      <h4>The Earth is Flat.</h4>
+      <select class="chosen-select" id="q1">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+      <h3 class="mt-md-5"><strong>Question 2</strong></h3>
+      <h4>The Earth is NOT Round.</h4>
+      <select class="chosen-select" id="q2">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+      <h3 class="mt-md-5"><strong>Question 3</strong></h3>
+      <h4>The Government is Trustworthy.</h4>
+      <select class="chosen-select" id="q3">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+      <h3 class="mt-md-5"><strong>Question 4</strong></h3>
+      <h4>The Truman Show is more than a Movie.</h4>
+      <select class="chosen-select" id="q4">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+      <h3 class="mt-md-5"><strong>Question 5</strong></h3>
+      <h4>The Moon Landing was FAKED.</h4>
+      <select class="chosen-select" id="q5">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+      <h3 class="mt-md-5"><strong>Question 6</strong></h3>
+      <h4>SEACUCUMBER!!!!</h4>
+      <select class="chosen-select" id="q6">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+      <h3 class="mt-md-5"><strong>Question 7</strong></h3>
+      <h4>Most Conspiracies Could be True.</h4>
+      <select class="chosen-select" id="q7">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+      <h3 class="mt-md-5"><strong>Question 8</strong></h3>
+      <h4>I like Turtles</h4>
+      <select class="chosen-select" id="q8">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+      <h3 class="mt-md-5"><strong>Question 9</strong></h3>
+      <h4>NASA is a Bunch of LIERS!</h4>
+      <select class="chosen-select" id="q9">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+      <h3 class="mt-md-5"><strong>Question 10</strong></h3>
+      <h4>Making Friends is Hard.</h4>
+      <select class="chosen-select" id="q10">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+      <br />
+      <br />
+
+      <!-- Submit Button -->
+      <button
+        type="submit"
+        class="btn btn-primary btn-lg btn-block sub-btn"
+        id="submitButton"
+        data-toggle="modal"
+        data-target="#thisModal"
+      >
+        <i class="fa fa-check-circle "></i> Submit
+      </button>
+
+      <hr />
+      <footer class="footer">
+        <div class="container">
+          <p>
+            <a href="/api/friends">API Friends List</a> |
+            <a href="https://github.com/ouiggi/Friend_Finder">GitHub Repo</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- bootstrap modal -->
+    <div class="modal" id="thisModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Drumroll Please...</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"
+  ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      // Activate submit button
+      $("#submitButton").on("click", function(event) {
+        event.preventDefault();
+        // Gather user inputs
+        var userInput = {
+          name: $("#name")
+            .val()
+            .trim(),
+          photo: $("#photo")
+            .val()
+            .trim(),
+          scores: [
+            $("#q1").val(),
+            $("#q2").val(),
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val()
+          ]
+        };
+        console.log(userInput);
+        $.post("api/friends", userInput, function(data) {
+          var user = userInput;
+          if (data) {
+            $.ajax({
+              url: "/api/friends",
+              method: "GET"
+            }).then(function(friendsArray) {
+              var bestMatch = {
+                name: "",
+                photo: "",
+                scores: [],
+                difference: 41
+              };
+              function compareFriends() {
+                var differenceArray = [];
+                var differenceTotal = 0;
+                for (var i = 0; i < friendsArray.length - 1; i++) {
+                  //reset
+                  differenceArray = [];
+                  for (var noti = 0; noti < friendsArray.length; noti++) {
+                    differenceTotal += Math.abs(
+                      friendsArray[i].scores[noti] - user.scores[noti]
+                    );
+                    friendsArray[i].difference = differenceTotal;
+                  }
+                  differenceTotal = 0;
+                }
+              }
+              function findBestMatch() {
+                for (var x = 0; x < friendsArray.length - 1; x++) {
+                  console.log(friendsArray[x]);
+                  if (friendsArray[x].difference < bestMatch.difference) {
+                    bestMatch = friendsArray[x];
+                  }
+                  differenceArray = [];
+                }
+              }
+              compareFriends();
+              findBestMatch();
+              $(".modal-body").append(bestMatch.name + "<br>");
+              $(".modal-body").append("<img src='" + bestMatch.photo + "' style='height:200px'>");
+              console.log("name: " + bestMatch.name);
+              console.log("image url: " + bestMatch.photo);
+            });
+          } else {
+            alert("err");
+          }
+        });
+      });
+      $("#thisModal").on("shown.bs.modal", function() {
+        $("#submitButton").trigger("focus");
+      });
+    </script>
+  </body>
+</html>
